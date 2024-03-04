@@ -58,3 +58,14 @@ Contributions to improve the analysis, model performance, or any related aspect 
 
 ## License
 This project is licensed under the [MIT License](LICENSE.txt).
+
+You are free to:
+- Use the code for any purpose, including commercial purposes.
+- Modify the code.
+- Distribute the code.
+- Sublicense the code.
+
+Under the following terms:
+- The code comes with no warranty or guarantee.
+- You must include a copy of the license in any redistribution.
+- You must provide appropriate credit to the original author (you).
