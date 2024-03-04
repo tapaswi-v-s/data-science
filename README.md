@@ -32,3 +32,14 @@ Here's the current file structure of the repository:<br>
 │<br>
 └── **data-analytics/** ← <_Future projects will be added here_>
 
+
+Feel free to navigate through the directories to explore individual projects and their associated files. Each project directory contains Jupyter notebooks, datasets, documentation, and any other relevant resources.
+
+## Let's Connect!
+
+If you're passionate about data science, machine learning, data visualization, or analytics, I'd love to connect with you! Let's collaborate, share ideas, and embark on this exciting journey together. Feel free to reach out via [Email](mailto:satyapanthi.t@northeastern.edu) or [LinkedIn](https://www.linkedin.com/in/tapaswi-v-s/).
+
+Happy exploring! 🚀📊
+
+[Tapaswi Satyapanthi](https://www.linkedin.com/in/tapaswi-v-s/)
+
