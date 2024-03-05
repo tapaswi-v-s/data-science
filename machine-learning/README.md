@@ -39,7 +39,7 @@ machine-learning/<br>
 │<br>
 ├── [ttc-subway-delay-prediction/](ttc-subway-delay-prediction)<br>
 │ ├── [data/](ttc-subway-delay-prediction/data)<br>
-│ ├── [models/](ttc-subway-delay-prediction/models)<br>
+│ ├── [model/](ttc-subway-delay-prediction/model)<br>
 │ └── [TTC - Subway Delay Time Prediction.ipynb](ttc-subway-delay-prediction/TTC%20-%20Subway%20Delay%20Time%20Prediction.ipynb)<br>
 └──
 
