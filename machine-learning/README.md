@@ -8,39 +8,39 @@ This directory houses a collection of machine learning projects, each designed t
 
 Here's a list of machine learning projects available in this directory:
 
-1. **Asteroid Hazard Classification**: Classifying potential hazards posed by asteroids for planetary defense efforts.
+1. [**Asteroid Hazard Classification:**](asteroid-hazard-classification) Classifying potential hazards posed by asteroids for planetary defense efforts.
 
-2. **Music Genre Classification**: Classifying music genres using machine learning techniques, uncovering patterns in audio data.
+2. [**Music Genre Classification:**](music-genre-classification) Classifying music genres using machine learning techniques, uncovering patterns in audio data.
 
-3. **Pulsar Star Classification**: Identifying pulsar stars through classification analysis, contributing to astronomical discoveries.
+3. [**Pulsar Star Classification:**](pulsar-star-classification) Identifying pulsar stars through classification analysis, contributing to astronomical discoveries.
 
-4. **TTC Subway Delay Prediction**: Predicting TTC subway delays to enhance commuter experiences.
+4. [**TTC Subway Delay Prediction:**](ttc-subway-delay-prediction) Predicting TTC subway delays to enhance commuter experiences.
 
 ## File Structure
 
 machine-learning/<br>
 │<br>
 ├── [asteroid-hazard-classification/](asteroid-hazard-classification)<br>
-│ ├── [data/](asteroid-hazard-classification/data)<br>
-│ ├── [decision-tree](asteroid-hazard-classification/decision-tree)/<br>
-│ ├── [models/](asteroid-hazard-classification/models)<br>
-│ └── [Asteroids-Hazard-Classification.ipynb](asteroid-hazard-classification/Asteroids-Hazard-Classification.ipynb)<br>
+│ ├── data/<br>
+│ ├── decision-tree/<br>
+│ ├── models/<br>
+│ └── Asteroids-Hazard-Classification.ipynb<br>
 │<br>
 ├── [music-genre-classification/](music-genre-classification)<br>
-│ ├── [data/](music-genre-classification/data)<br>
-│ ├── [models/](music-genre-classification/models)<br>
-│ └── [Music-Genre-Classification.ipynb](music-genre-classification/Music-Genre-Classification.ipynb)<br>
+│ ├── data/<br>
+│ ├── models/<br>
+│ └── Music-Genre-Classification.ipynb<br>
 │<br>
 ├── [pulsar-star-classification/](pulsar-star-classification)<br>
-│ ├── [data/](pulsar-star-classification/data)<br>
-│ ├── [decision-tree/](pulsar-star-classification/decision-tree)<br>
-│ ├── [models/](pulsar-star-classification/models)<br>
-│ └── [Pulsar-Star-Classification.ipynb](pulsar-star-classification/Pulsar-Star-Classification.ipynb)<br>
+│ ├── data/](pulsar-star-classification/data)<br>
+│ ├── decision-tree/<br>
+│ ├── models/<br>
+│ └── Pulsar-Star-Classification.ipynb<br>
 │<br>
 ├── [ttc-subway-delay-prediction/](ttc-subway-delay-prediction)<br>
-│ ├── [data/](ttc-subway-delay-prediction/data)<br>
-│ ├── [model/](ttc-subway-delay-prediction/model)<br>
-│ └── [TTC - Subway Delay Time Prediction.ipynb](ttc-subway-delay-prediction/TTC%20-%20Subway%20Delay%20Time%20Prediction.ipynb)<br>
+│ ├── data/<br>
+│ ├── model/<br>
+│ └── TTC - Subway Delay Time Prediction.ipynb<br>
 └──
 
 Each project directory contains a README.md file providing an overview of the project, along with Jupyter notebooks, datasets, and any other relevant resources. Feel free to explore each project to learn more about the datasets, analysis process, and model building.
