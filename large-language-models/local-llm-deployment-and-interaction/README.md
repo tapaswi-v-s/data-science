@@ -7,7 +7,6 @@ large language models (LLMs) using Ollama with Docker. Two models are showcased:
 ## Prerequisites
 
 - Docker installed on your device
-- GPU support for Docker
 
 ## Setup Instructions
 
@@ -31,7 +30,7 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama-co
 
 - `docker run`: Spins up the container.
 - `-d`: Runs the container in detached mode.
-- `--gpus=all`: Utilizes all available GPUs.
+- `--gpus=all`: Utilizes all available GPUs, if you don't have GPU you can remove this flag.
 - `-v ollama:/root/.ollama`: Mounts the container's root directory to your device's directory.
 - `-p 11434:11434`: Exposes the container's port 11434 to your device's
 
