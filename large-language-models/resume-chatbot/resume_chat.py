@@ -14,7 +14,7 @@ os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["huggingface_api_token"] # D
 
 # Load the vector store from disk
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-vector_store = Chroma(embedding_function=embedding_model, persist_directory="data")
+vector_store = Chroma(embedding_function=embedding_model, persist_directory="./data")
 
 # Initialize the Hugging Face Hub LLM
 hf_hub_llm = HuggingFaceHub(
