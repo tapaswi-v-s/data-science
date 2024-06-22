@@ -108,12 +108,14 @@ with st.sidebar:
 initial_message = """
     Hi there! I'm Tapaswi's virtual assistant. 
     What would you like to know about Tapaswi's background and experience?
-    To get you started, here are some key areas you can explore:\n
-    What are his skills?\n
-    Tell me about his professional experience\n
-    What projects has he worked on?\n
-    What certifications does he have?\n
-    What is his educational background?"""
+    To get you started, here are some question you can as me\n
+    **_[EASY]_** What are his skills?\n
+    **_[EASY]_** Tell me about his professional experience\n
+    **_[EASY]_** What projects has he worked on?\n
+    **_[EASY]_** What certifications does he have?\n
+    **_[COMPLEX]_** Has he worked with any MNC?\n
+    **_[COMPLEX]_** How much technical sound he is with Flutter?\n
+    **_[COMPLEX]_** Is he an ideal candidate for hiring a mobile app developer?"""
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
@@ -123,7 +125,7 @@ if "messages" not in st.session_state.keys():
 # Display or clear chat messages
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
-        st.write(message["content"])
+        st.markdown(message["content"])
 
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": initial_message}]
@@ -133,7 +135,7 @@ st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
-        st.write(prompt)
+        st.markdown(prompt)
 
 
 
