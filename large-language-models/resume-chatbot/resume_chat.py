@@ -6,6 +6,10 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 import warnings, os
 warnings.filterwarnings("ignore")
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["huggingface_api_token"] # Don't forget to add your hugging face token
 
 # Load the vector store from disk
