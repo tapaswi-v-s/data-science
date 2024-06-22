@@ -93,11 +93,16 @@ This bot, built on top of [My Resume](https://drive.google.com/file/d/1WZEBLgU-3
                 It's completely open-source and   
             **✨cost-free✨**!
 
-Check out the project on my [GitHub repo](link).
+Check out the project on my [GitHub repo](https://github.com/tapaswi-v-s/data-science/tree/2f9e2e6d2825b354980d7dab16067fd9cd0fc35c/large-language-models/resume-chatbot)
+
+### Disclaimer ⚠️
+
+While this bot aims to provide accurate information, LLMs can make mistakes. 
+Please verify critical details independently.
 """
 
 with st.sidebar:
-    st.title('Tapaswi\'s Virtual Assistant')
+    st.title(':blue[Tapaswi\'s Virtual Assistant]')
     st.markdown(side_bar_message)
 
 initial_message = """
@@ -122,7 +127,7 @@ for message in st.session_state.messages:
 
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": initial_message}]
-# st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
+st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # User-provided prompt
 if prompt := st.chat_input():
