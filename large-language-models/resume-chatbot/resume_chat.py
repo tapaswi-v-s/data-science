@@ -10,11 +10,13 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
+data_directory = os.path.join(os.path.dirname(__file__), "data")
+
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["huggingface_api_token"] # Don't forget to add your hugging face token
 
 # Load the vector store from disk
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-vector_store = Chroma(embedding_function=embedding_model, persist_directory="data")
+vector_store = Chroma(embedding_function=embedding_model, persist_directory=data_directory)
 
 # Initialize the Hugging Face Hub LLM
 hf_hub_llm = HuggingFaceHub(
@@ -98,22 +100,29 @@ This bot, built on top of [My Resume](https://drive.google.com/file/d/1WZEBLgU-3
                 It's completely open-source and   
             **✨cost-free✨**!
 
-Check out the project on my [GitHub repo](link).
+Check out the project on my [GitHub repo](https://github.com/tapaswi-v-s/data-science/tree/2f9e2e6d2825b354980d7dab16067fd9cd0fc35c/large-language-models/resume-chatbot)
+
+### Disclaimer ⚠️
+
+While this bot aims to provide accurate information, LLMs can make mistakes. 
+Please verify critical details independently.
 """
 
 with st.sidebar:
-    st.title('Tapaswi\'s Virtual Assistant')
+    st.title(':blue[Tapaswi\'s Virtual Assistant]')
     st.markdown(side_bar_message)
 
 initial_message = """
     Hi there! I'm Tapaswi's virtual assistant. 
     What would you like to know about Tapaswi's background and experience?
-    To get you started, here are some key areas you can explore:\n
-    What are his skills?\n
-    Tell me about his professional experience\n
-    What projects has he worked on?\n
-    What certifications does he have?\n
-    What is his educational background?"""
+    To get you started, here are some question you can as me\n
+    **_[EASY]_** What are his skills?\n
+    **_[EASY]_** Tell me about his professional experience\n
+    **_[EASY]_** What projects has he worked on?\n
+    **_[EASY]_** What certifications does he have?\n
+    **_[COMPLEX]_** Has he worked with any MNC?\n
+    **_[COMPLEX]_** How much technical sound he is with Flutter?\n
+    **_[COMPLEX]_** Is he an ideal candidate for hiring a mobile app developer?"""
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
@@ -123,17 +132,17 @@ if "messages" not in st.session_state.keys():
 # Display or clear chat messages
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
-        st.write(message["content"])
+        st.markdown(message["content"])
 
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": initial_message}]
-# st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
+st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # User-provided prompt
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
-        st.write(prompt)
+        st.markdown(prompt)
 
 
 
