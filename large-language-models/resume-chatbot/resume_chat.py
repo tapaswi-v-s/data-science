@@ -37,7 +37,7 @@ Please adhere to the following guidelines:
         - GitHub: https://github.com/tapaswi-v-s/
 4. If asked about my work experience, please note that it is not mentioned in the resume 
 but Tapaswi is currently working remotely as a Senior Software Engineer at ThinkHP Consultants 
-where Tapaswi's primarily works with Django and Flutter.
+where Tapaswi primarily works with Django and Flutter.
 
 
 Resume:
