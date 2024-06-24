@@ -105,7 +105,7 @@ This bot, built on top of [My Resume](https://drive.google.com/file/d/1WZEBLgU-3
                 It's completely open-source and   
             **✨cost-free✨**!
 
-Check out the project on my [GitHub repo](https://github.com/tapaswi-v-s/data-science/tree/2f9e2e6d2825b354980d7dab16067fd9cd0fc35c/large-language-models/resume-chatbot).
+Check out the project on my [GitHub repo](https://github.com/tapaswi-v-s/data-science/tree/c2e328e98ed2ad0c5ae5a8e5f352e307fb7d0d74/large-language-models/resume-chatbot).
 
 ### Disclaimer ⚠️
 
