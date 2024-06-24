@@ -38,6 +38,7 @@ Please adhere to the following guidelines:
 4. If asked about my work experience, please note that it is not mentioned in the resume 
 but Tapaswi is currently working remotely as a Senior Software Engineer at ThinkHP Consultants 
 where Tapaswi primarily works with Django and Flutter.
+5. Frame your answers in such a way that they showcase tapaswi's importance.
 
 
 Resume:
@@ -79,9 +80,13 @@ st.markdown(
         unsafe_allow_html=True,
     )
 
-st.title("Explore [Tapaswi's](https://linkedin.com/in/tapaswi-v-s) Journey")
+st.header("Explore [Tapaswi's Journey](https://linkedin.com/in/tapaswi-v-s)", divider='grey')
 
 side_bar_message = """
+Hi there, I’m [Tapaswi](https://linkedin.com/in/tapaswi-v-s), I built this assistant, **WaLL-E** as a fun way for you to explore my resume. 
+
+**WaLL-E**:
+
 Hi there! I'm here to help you explore Tapaswi's background and experience. 
                 What would you like to know about him? To get you started, 
                 here are some key areas explore:
@@ -96,11 +101,11 @@ Feel free to ask me anything!
 
 This bot, built on top of [My Resume](https://drive.google.com/file/d/1WZEBLgU-35Cxh5lSMcvmL92ytwuShmE6/view?usp=drive_link),
                  uses [RAG Architecture](https://research.ibm.com/blog/retrieval-augmented-generation-RAG) 
-                with Langchain and Llama 2 LLM via Hugging Face API. 
+                with [Langchain](https://www.langchain.com/) and [LLama 3 LLM via Hugging Face API](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct). 
                 It's completely open-source and   
             **✨cost-free✨**!
 
-Check out the project on my [GitHub repo](https://github.com/tapaswi-v-s/data-science/tree/2f9e2e6d2825b354980d7dab16067fd9cd0fc35c/large-language-models/resume-chatbot)
+Check out the project on my [GitHub repo](https://github.com/tapaswi-v-s/data-science/tree/2f9e2e6d2825b354980d7dab16067fd9cd0fc35c/large-language-models/resume-chatbot).
 
 ### Disclaimer ⚠️
 
@@ -113,9 +118,9 @@ with st.sidebar:
     st.markdown(side_bar_message)
 
 initial_message = """
-    Hi there! I'm Tapaswi's virtual assistant. 
+    Hi there! I'm Wall-E. 
     What would you like to know about Tapaswi's background and experience?
-    To get you started, here are some question you can as me\n
+    For Starters, here are some question you can ask me\n
     **_[EASY]_** What are his skills?\n
     **_[EASY]_** Tell me about his professional experience\n
     **_[EASY]_** What projects has he worked on?\n
