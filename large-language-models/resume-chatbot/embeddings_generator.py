@@ -7,7 +7,7 @@ import os
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = "<YOUR_HUGGINGFACE_API_TOKEN>"
 
 # Load the PDF
-loader = PyPDFLoader("Tapaswi_Resume.pdf")
+loader = PyPDFLoader("Tapaswi_Resume.pdf") # provide your PDF path here
 documents = loader.load()
 
 # Split the text
