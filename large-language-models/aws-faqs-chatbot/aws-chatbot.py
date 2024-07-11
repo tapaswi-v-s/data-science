@@ -73,10 +73,25 @@ st.markdown(
 st.header("Amazon EC2 FAQ chatbot", divider='grey')
 
 side_bar_message = """
-Hi there! This is the chat bot built build on AWS EC2 FAQs which you can find [here](https://aws.amazon.com/ec2/faqs/)
+Hello! This chatbot is designed to answer your questions based on the AWS EC2 FAQs, 
+which you can find [here](https://aws.amazon.com/ec2/faqs/).
 
+**Note**: Currently, this chatbot is trained to answer questions solely based on the Amazon EC2 FAQs.
+## What This Chatbot Does
 
-Note: Currently this chat bot is inly trained to answer questions based on amazon EC2 FAQs only.
+- **Answers Questions**: Provides answers to your queries by searching through the AWS EC2 FAQs.
+- **FAQ-Based Responses**: Ensures that responses are relevant and accurate by using pre-existing FAQ data.
+
+**How It Is Built**
+
+- **Web Scraping**: The FAQ data is scraped from the AWS EC2 FAQ page using a Python script.
+- **Text Embeddings**: The scraped data is processed to generate text embeddings using a pre-trained model.
+- **ChromaDB**: The embeddings are stored in a Chroma Vector Database for efficient search and retrieval.
+- **LLM Integration**: When you ask a question, the chatbot searches for similar questions in the ChromaDB and uses a language model to generate a coherent response.
+
+Enjoy using the AWS EC2 FAQ Chatbot!
+
+For more details and to view the code, visit the [project repository](https://github.com/tapaswi-v-s/data-science/tree/aws-chatbot/large-language-models/aws-faqs-chatbot).
 """
 
 with st.sidebar:
