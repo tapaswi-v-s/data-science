@@ -2,6 +2,10 @@
 
 **Note: This chatbot is fed only FAQs from the AWS EC2 FAQ page: [https://aws.amazon.com/ec2/faqs/](https://aws.amazon.com/ec2/faqs/)**
 
+## Live Demo
+
+Try out the live version of the chatbot [here](https://aws-faq.streamlit.app/).
+
 ## Overview
 
 This project builds a chatbot that answers questions based on the FAQs from the AWS EC2 FAQ page. The chatbot uses a combination of web scraping, text embedding generation, and a Streamlit app to provide answers to user queries.
