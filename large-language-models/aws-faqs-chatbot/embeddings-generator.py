@@ -3,6 +3,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 import os, warnings
+import streamlit as st
 warnings.filterwarnings('ignore')
 
 loader = CSVLoader(file_path="aws_faqs.csv", encoding='utf-8')
