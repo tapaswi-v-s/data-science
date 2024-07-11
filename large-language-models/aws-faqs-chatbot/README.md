@@ -53,12 +53,12 @@ streamlit run aws-chatbot.py
 
 ### aws-chatbot.py
 
-    - **Functionality**: Provides a Streamlit-based chatbot interface to answer user questions.
-    - **Process**:
-        - Initializes ChromaDB with the local database.
-        - Searches for similar questions in ChromaDB when a user asks a question, using `similarity_score_threshold` method with a threshold set to `0.5`.
-        - Provides the similar question and its answer to the LLM.
-        - Uses `mistralai/Mixtral-8x7B-Instruct-v0.1` LLM from HuggingFace to generate responses.
+- **Functionality**: Provides a Streamlit-based chatbot interface to answer user questions.
+- **Process**:
+    - Initializes ChromaDB with the local database.
+    - Searches for similar questions in ChromaDB when a user asks a question, using `similarity_score_threshold` method with a threshold set to `0.5`.
+    - Provides the similar question and its answer to the LLM.
+    - Uses `mistralai/Mixtral-8x7B-Instruct-v0.1` LLM from HuggingFace to generate responses.
 
 ## Project Structure
 
