@@ -1,6 +1,6 @@
 # ChatBot Evaluation and Improvement
 
-## Instructions
+## ⚠️Instructions
 
 1. **Paste your HuggingFace API token** in the [.env](./.env) file.
 2. **Install the requirements** using:
